@@ -3,20 +3,29 @@
 
 using namespace std;
 
-struct Bomb {
-    string unlock_code;
-    char wire_color;
-    int seconds;
+class Bomb{
+    public:
+        string unlock_code;
+        char linear_color;
+        int time;
+        Bomb(string unlock_code, char linear_color, int time) {
+            this->unlock_code = unlock_code;
+            this->linear_color = linear_color;
+            this->time = time;
+        }
 };
 
-int main() {
-    Bomb boom;
+int main(){
 
-    cin >> boom.unlock_code >> boom.wire_color >> boom.seconds;
+    string u_code;
+    char l_color;
+    int time;
+    cin >> u_code >> l_color >> time;
+    
+    Bomb b = Bomb(u_code, l_color, time);
 
-    cout << "code : " << boom.unlock_code << endl;
-    cout << "color : " << boom.wire_color << endl;
-    cout << "second : " << boom.seconds << endl;
-
+    cout << "code : " << b.unlock_code << endl;
+    cout << "color : " << b.linear_color << endl;
+    cout << "second : " << b.time << endl;
     return 0;
 }
