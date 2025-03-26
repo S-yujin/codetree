@@ -1,13 +1,14 @@
 #include <iostream>
-#include <iomanip>
-
 using namespace std;
 
 int main() {
     int x, y;
+
     cin >> x >> y;
 
-    cout << x + y << " " << fixed << setprecision(1) << static_cast<double>(x) / y << endl;
+    cout <<fixed;
+    cout.precision(1);
+    cout<< x + y << " " << (double(x) + double(y)) / 2 << endl;
 
     return 0;
 }
