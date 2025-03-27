@@ -40,7 +40,10 @@ int main()
         else if(command == "D")
         {
             if (it != l.end())
+            {
+                it++;
                 it = l.erase(it);
+            }
         }
 
         else if (command == "P")
