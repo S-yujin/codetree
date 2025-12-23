@@ -3,12 +3,16 @@ using namespace std;
 
 int main() {
     int n;
-    int a=1;
-    for (int i=0; i<n; i++){
-        for (int j=n; j<0;j--){
-            cout << a;
-            a+=;
-        }  
+    cin >> n;
+    for (int i=1;i<=n;i++){
+        for (int j=1; j<=n; j++){
+            if (j%2 == 1){
+                cout << i;
+            }
+            else{
+                cout << n - i + 1;
+            }
+        }
         cout << endl;
     }
     return 0;
