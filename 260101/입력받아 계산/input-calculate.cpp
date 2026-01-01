@@ -5,6 +5,6 @@ int main() {
     int a;
     cin >> a;
 
-    cout << 
+    cout << a + 2;
     return 0;
 }
