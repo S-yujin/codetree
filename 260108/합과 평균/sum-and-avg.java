@@ -7,6 +7,6 @@ public class Main {
         int a = in.nextInt();
         int b = in.nextInt();
 
-        System.out.println((a+b) + (double)(a+b)/2);
+        System.out.println((a+b) + " " + (double)(a+b)/2);
     }
 }
