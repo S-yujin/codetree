@@ -7,8 +7,7 @@ public class Main {
 
         int h = in.nextInt();
         int w = in.nextInt();
-        int b = ((h/100)*(h/100))/w;
-        // (Math.pow((h/100), 2));
+        int b = (10000*w)/(int)Math.pow(h, 2);
 
         System.out.println(b);
 
