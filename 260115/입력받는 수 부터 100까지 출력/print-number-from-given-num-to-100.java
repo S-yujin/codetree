@@ -6,8 +6,6 @@ public class Main {
 
         int n = in.nextInt();
 
-        for (int i = n; i <= 100; i++){
-            System.out.print
-        }
+        for (int i = n; i <= 100; i++){}
     }
 }
