@@ -9,7 +9,7 @@ public class Main {
         
         while(i <= n){
             System.out.printf(i + " ");
-            i ++
+            i ++;
         }
     }
 }
