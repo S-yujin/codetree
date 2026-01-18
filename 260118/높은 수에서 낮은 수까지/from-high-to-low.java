@@ -8,13 +8,13 @@ public class Main {
         int b = in.nextInt();
 
         if (a > b){
-            for (int i = a; i >= b; a--){
-                System.out.printf(a + " ");
+            for (int i = a; i >= b; i--){
+                System.out.printf(i + " ");
             }
         }
         else{
-            for (int i = b; b >= a; b --){
-                System.out.printf(b + " ");
+            for (int i = b; i >= a; i--){
+                System.out.printf(i + " ");
             }
         }
     }
