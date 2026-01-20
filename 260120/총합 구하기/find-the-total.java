@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int a = in.nextInt();
+        int b = in.nextInt();
+
+        int sum = 0;
+
+        for(int i = a; i <= b; i++){
+            if(i % 6 == 0 && i % 8 == 1){
+                sum += i;
+            }
+        }
+
+        System.out.print(sum);
+    }
+}
