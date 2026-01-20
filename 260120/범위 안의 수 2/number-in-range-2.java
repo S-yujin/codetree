@@ -12,8 +12,8 @@ public class Main {
             
             if(n >=0 && n <= 200){
                 sum += n;
+                cnt ++;
             }
-            cnt ++;
         }
 
         System.out.printf(sum + " " + Math.round((double)sum/cnt * 10) / 10.0);
