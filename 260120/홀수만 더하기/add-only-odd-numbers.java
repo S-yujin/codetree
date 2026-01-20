@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int n = in.nextInt();
+        int sum = 0;
+
+        for(int i = 0; i < n; i++){
+            int num = in.nextInt();
+            if(num % 2 == 1 && num % 3 == 0){
+                sum += num;
+            }
+        }
+
+        System.out.print(sum);
+    }
+}
