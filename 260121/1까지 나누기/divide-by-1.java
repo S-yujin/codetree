@@ -6,14 +6,14 @@ public class Main {
 
         int n = in.nextInt();
         int cnt = 0;
+        int i = 1;
 
-        for(int i = 1; i < 100; i++){
-
-            if(n / i >= 1){
-                System.out.print(cnt);
-                break;
-            }
-            cnt ++;
+        while (n > 1) {
+            n = n / i;
+            cnt++;
+            i++;
         }
+
+        System.out.print(cnt);
     }
 }
