@@ -14,7 +14,7 @@ public class Main {
             for(int j = n; j > i; j--){
                 System.out.print(cnt + " ");
                 cnt ++;
-                if(cnt == ){
+                if(cnt == 10){
                     cnt = 1;
                 }
             }
