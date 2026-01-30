@@ -4,18 +4,23 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        int[] arr = new arr[10];
-
+        int[] arr = new int[10];
         int sum = 0;
-        double avg = 0;
+        int cnt = 0;
 
-        for(int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
             arr[i] = in.nextInt();
-
-            sum += arr[i];
-            avg = sum / 10;
         }
 
-        System.out.print(sum + " " + avg);
+        for (int i = 0; i < 10; i++) {
+            if (arr[i] >= 250) {
+                break;
+            }
+            sum += arr[i];
+            cnt++;
+        }
+
+        double avg = (double) sum / cnt;
+        System.out.printf("%d %.1f", sum, avg);
     }
 }
