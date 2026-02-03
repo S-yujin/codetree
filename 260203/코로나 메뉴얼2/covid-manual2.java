@@ -2,18 +2,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int A = 0, B = 0, C = 0, D = 0;
         boolean emergency = false;
 
         for (int i = 0; i < 3; i++) {
-            String cold = in.next();
-            int temp = in.nextInt();
+            String cold = sc.next();
+            int temp = sc.nextInt();
 
-            if (temp >= 40) {
-                emergency = true;
-            }
+            if (temp >= 40) emergency = true;
 
             if (cold.equals("Y")) {
                 if (temp >= 37) A++;
@@ -25,8 +23,6 @@ public class Main {
         }
 
         System.out.print(A + " " + B + " " + C + " " + D);
-        if (emergency) {
-            System.out.print(" E");
-        }
+        if (emergency) System.out.print(" E");
     }
 }
