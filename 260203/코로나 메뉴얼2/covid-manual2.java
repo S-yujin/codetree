@@ -1,28 +1,36 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-        int A = 0, B = 0, C = 0, D = 0;
-        boolean emergency = false;
+        String[] cold = new String[3];
+        int[] temp = new int[3];
 
-        for (int i = 0; i < 3; i++) {
-            String cold = sc.next();
-            int temp = sc.nextInt();
+        int aCount = 0;
+        int bCount = 0;
+        int cCount = 0;
+        int dCount = 0;
 
-            if (temp >= 40) emergency = true;
+        for(int i=0; i<3; i++){
+            cold[i] = in.next();
+            temp[i] = in.nextInt();
 
-            if (cold.equals("Y")) {
-                if (temp >= 37) A++;
-                else C++;
+            if(cold[i].equals("Y") && temp[i] >=37){
+                aCount++;
+            } else if(cold[i].equals("N") && temp[i] >=37){
+                bCount++;
+            } else if(cold[i].equals("Y") && temp[i] < 37) {
+                cCount++;
             } else {
-                if (temp >= 37) B++;
-                else D++;
+                dCount++;
             }
         }
 
-        System.out.print(A + " " + B + " " + C + " " + D);
-        if (emergency) System.out.print(" E");
+        System.out.print(aCount + " " + bCount  + " " + cCount + " " + dCount + " ");
+
+            if(aCount >= 2){
+                System.out.print("E");
+            }
     }
 }
