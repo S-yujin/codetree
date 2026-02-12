@@ -7,6 +7,6 @@ public class Main {
         String str = in.next();
         String str2 = in.next();
 
-        System.out.print(str.length() + str2.length);
+        System.out.print(str.length() + str2.length());
     }
 }
