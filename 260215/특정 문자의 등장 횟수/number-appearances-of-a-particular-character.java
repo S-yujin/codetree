@@ -16,6 +16,6 @@ public class Main {
                 sum += 1;
             }
         }
-        System.out.print(cnt + " " + sum)
+        System.out.print(cnt + " " + sum);
     }
 }
