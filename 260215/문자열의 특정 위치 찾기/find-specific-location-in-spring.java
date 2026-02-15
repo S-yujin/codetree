@@ -19,7 +19,7 @@ public class Main {
             System.out.println("No");
         }
         else{
-            System.out.println(su)
+            System.out.println(sum);
         }
     }
 }
