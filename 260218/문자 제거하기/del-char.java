@@ -5,11 +5,21 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         String str = in.next();
-        
-        for(int i = 0; i < str.length(); i++){
+
+        for (int i = 0; i < 20; i++) {
+            if (str.length() <= 1) {
+                break;
+            }
+
             int n = in.nextInt();
 
-            System.out.pirntln(str.substring(n));
+            if (n >= 0 && n < str.length()) {
+                str = str.substring(0, n) + str.substring(n + 1);
+            } else {
+                str = str.substring(0, str.length() - 1);
+            }
+
+            System.out.println(str);
         }
     }
 }
